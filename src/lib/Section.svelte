@@ -5,13 +5,13 @@
     }: { title?: string | undefined; children?: any | undefined } = $props();
 </script>
 
-<section>
+<section class="mx-10">
     {#if title}
-        <h2 class="font-serif text-2xl font-bold ml-5 mt-5">{title}</h2>
+        <h2 class="font-serif text-xl font-bold mt-5 -ml-5">{title}</h2>
     {/if}
-    <div class="ml-10">
-        {#if children}
+    {#if children}
+        <div class="text-justify">
             {@render children()}
-        {/if}
-    </div>
+        </div>
+    {/if}
 </section>
