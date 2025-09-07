@@ -7,6 +7,6 @@
         class={`motion-reduce:hidden h-full absolute top-0 py-[inherit] motion-safe:transition-[left] !duration-500 ease-outback`}
         style={`left: ${((index ?? 0) / totalPages) * 100}%; width: ${100/totalPages}%`}
     >
-        <div class="bg-blue-500 rounded-full w-full h-full shadow"></div>
+        <div class="bg-gradient-to-bl from-blue-500 to-blue-600 rounded-full w-full h-full shadow"></div>
     </div>
 </div>
