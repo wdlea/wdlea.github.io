@@ -1,6 +1,6 @@
 const pages = [
     { title: "Home", path: "/", },
-    { title: "About Me", path: "/about", },
+    // { title: "About Me", path: "/about", },
     { title: "Contact", path: "/contact", },
 ];
 
