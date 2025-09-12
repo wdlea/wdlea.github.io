@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 body {
-    @apply bg-blue-50 text-blue-950
+    @apply bg-blue-50 text-blue-950 dark:bg-blue-900 dark:text-blue-50 
 }
 
 @theme {
@@ -9,6 +9,15 @@ body {
     --font-sans: "Montserrat", serif;
 }
 
-.bg-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2351a2ff' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+
+@media (prefers-color-scheme: light) {
+    .bg-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23eff6ff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+        @apply bg-fixed
+    }
+}
+
+svg {
+    @apply text-blue-50 dark:text-blue-900
 }

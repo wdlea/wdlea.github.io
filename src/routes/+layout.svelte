@@ -2,8 +2,10 @@
 	import "../app.css";
 	import favicon from "$lib/assets/favicon.svg";
 	import Navbar from "$lib/navbar/Navbar.svelte";
-	import Wave from "$lib/assets/wave.svg";
-    import Footer from "./Footer.svelte";
+	import Wave from "$lib/assets/wave.svelte";
+	import Footer from "./Footer.svelte";
+	import WavesBackground from "$lib/assets/WavesBackground.mp4";
+	import WaveDown from "$lib/assets/wave_down.svelte";
 
 	let { children } = $props();
 </script>
@@ -12,22 +14,39 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="min-h-screen">
-	<section
-		class="p-10 pb-0 text-blue-950 relative bg-blue-100 overflow-clip bg-fixed bg-pattern"
-	>
+<div class="min-h-screen relative">
+	<section class="p-10 pb-0 relative overflow-clip text-blue-50">
 		<h1 class="font-serif text-4xl font-bold">William Leader</h1>
 		<span class="text-xl ml-3">Websites done better.</span>
-
-		<img
-			class="-mx-10 min-w-screen drop-shadow-2xl -z-10"
-			src={Wave}
-			alt=""
-		/>
 	</section>
-	<Navbar />
-	<div class="bg-blue-50 mb-10">
-		{@render children?.()}
+
+	<div class="mx-0">
+		<div class="*:min-w-full drop-shadow-2xl -mb-5 -z-10 overflow-clip">
+			<Wave />
+		</div>
+
+		<div class="bg-blue-50 py-20">
+			<Navbar />
+
+			<div class="mb-10">
+				{@render children?.()}
+			</div>
+		</div>
+
+		<div
+			class="*:min-w-full drop-shadow-2xl *:object-top *:-z-10 overflow-clip"
+		>
+			<WaveDown />
+		</div>
 	</div>
+
+	<video
+		src={WavesBackground}
+		muted
+		autoplay
+		playsinline
+		loop
+		class="fixed top-0 min-h-screen min-w-screen object-cover -z-50 pointer-events-none object-left blur-xs"
+	></video>
 </div>
-<Footer/>
+<Footer />
