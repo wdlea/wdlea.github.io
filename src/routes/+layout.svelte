@@ -21,7 +21,7 @@
 	</section>
 
 	<div class="mx-0">
-		<div class="*:min-w-full drop-shadow-2xl -mb-5 -z-10 overflow-clip">
+		<div class="*:min-w-full drop-shadow -mb-5 -z-10 overflow-clip">
 			<Wave />
 		</div>
 
@@ -34,7 +34,7 @@
 		</div>
 
 		<div
-			class="*:min-w-full drop-shadow-2xl *:object-top *:-z-10 overflow-clip"
+			class="*:min-w-full drop-shadow *:object-top *:-z-10 overflow-clip"
 		>
 			<WaveDown />
 		</div>
