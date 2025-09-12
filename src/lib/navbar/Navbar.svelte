@@ -8,9 +8,9 @@
 <div
     class="bg-blue-100 dark:bg-blue-700 shadow-inner w-fit mx-auto rounded-full p-2 my-3 md:mt-0 sticky"
 >
-    <nav class="w-fit rounded-full flex flex-row justify-stretch relative z-0">
+    <nav class="w-fit rounded-full flex flex-row items-center justify-stretch text-center relative z-0">
         <Highlight
-            index={pages.findIndex((p) => p.path == page.url.pathname)}
+            index={Math.max(pages.findIndex((p) => p.path == page.url.pathname), 0)}
             totalPages={pages.length}
         />
 
