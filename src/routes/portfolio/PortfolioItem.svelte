@@ -1,6 +1,7 @@
 <script lang="ts">
     import EmptyCard from "$lib/EmptyCard.svelte";
     import Button from "$lib/Button.svelte";
+    import { fade } from "svelte/transition";
 
     let {
         title,
@@ -21,7 +22,8 @@
     >
         <img
             src={img}
-            class="col-start-1 md:col-start-3 col-span-full row-span-3 row-end-auto rounded place-self-center"
+            class="col-start-1 md:col-start-3 col-span-full row-span-3 row-end-auto rounded place-self-center object-fit h-50 md:h-auto w-full"
+            in:fade={{duration: 500}}
             alt=""
         />
 

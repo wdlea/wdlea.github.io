@@ -5,12 +5,11 @@
 	import Wave from "$lib/assets/wave.svelte";
 	import Footer from "./Footer.svelte";
 	import WaveDown from "$lib/assets/wave_down.svelte";
-	import { fade } from "svelte/transition";
+	import { fade, fly } from "svelte/transition";
 	import { page } from "$app/state";
 	import { onMount } from "svelte";
-	import { afterNavigate, beforeNavigate } from "$app/navigation";
+	import { afterNavigate } from "$app/navigation";
 	import LaunchAnimation from "./LaunchAnimation.svelte";
-	import { get } from "svelte/store";
 	import prevScrollPosition from "$lib/PrevScrollPosition";
 
 	let { children } = $props();
@@ -66,12 +65,8 @@
 
 			<div class="bg-sky-50 pb-20">
 				<Navbar />
-
 				{#key page.url}
-					<div
-						class="mb-10 overflow-x-clip"
-						transition:fade={{ duration: 100 }}
-					>
+					<div class="relative mb-10 overflow-x-clip">
 						{@render children?.()}
 					</div>
 				{/key}
