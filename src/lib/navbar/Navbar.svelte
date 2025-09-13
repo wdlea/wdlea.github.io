@@ -6,7 +6,7 @@
 </script>
 
 <div
-    class="bg-blue-100 dark:bg-blue-700 shadow-inner w-fit mx-auto rounded-full p-2 my-3 md:mt-0 sticky"
+    class="bg-blue-100 shadow-inner w-fit mx-auto rounded-full p-2 my-3 md:mt-0 sticky"
 >
     <nav class="w-fit rounded-full flex flex-row items-center justify-stretch text-center relative z-0">
         <Highlight
