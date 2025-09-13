@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 body {
-    @apply bg-blue-50 text-blue-950 dark:bg-blue-900 dark:text-blue-50 
+    @apply bg-sky-50 text-sky-950
 }
 
 @theme {
@@ -9,15 +9,10 @@ body {
     --font-sans: "Montserrat", serif;
 }
 
-
-
-@media (prefers-color-scheme: light) {
-    .bg-pattern {
-        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23eff6ff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-        @apply bg-fixed
-    }
+.bg-gradient-epic{
+    @apply bg-gradient-to-bl from-sky-400 to-sky-500
 }
 
 svg {
-    @apply text-blue-50 dark:text-blue-900
+    @apply text-sky-50
 }

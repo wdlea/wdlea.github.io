@@ -4,6 +4,6 @@
 
 <a
     {href}
-    class="bg-blue-500 text-blue-50 p-3 rounded shadow hover:shadow-inner text-center font-bold"
+    class="bg-sky-500 text-sky-50 p-3 rounded shadow hover:shadow-inner text-center font-bold"
     >{@render children?.()}</a
 >

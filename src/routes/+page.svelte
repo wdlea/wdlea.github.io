@@ -34,7 +34,7 @@
 <Cta />
 
 <Section title="My process for perfection">
-    <div class="border-l-4 border-blue-600 space-y-10 pb-10 mt-10">
+    <div class="border-l-4 border-sky-600 space-y-10 pb-10 mt-10">
         <ProcessCard
             index="1"
             title="Consultation"

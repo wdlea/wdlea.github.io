@@ -14,7 +14,7 @@
     <p>If you would like a high quality website, please email me:</p>
 
     {#if email}
-        <a class="text-blue-500 underline" href={`mailto:${email}`}>{email}</a>
+        <a class="text-sky-500 underline" href={`mailto:${email}`}>{email}</a>
     {:else}
         <p>
             To prevent spam, my email only loads in when JavaScript is enabled.

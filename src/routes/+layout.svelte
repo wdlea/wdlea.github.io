@@ -17,8 +17,8 @@
 </svelte:head>
 
 <div class="min-h-screen relative">
-	<section class="p-10 pb-0 relative overflow-clip text-blue-50">
-		<h1 class="font-serif text-4xl font-bold">William Leader</h1>
+	<section class="p-10 h-[40svh] relative overflow-clip text-sky-50">
+		<h1 class="font-serif text-4xl sm:text-6xl font-bold">William Leader</h1>
 		<span class="text-xl ml-3">Websites done better.</span>
 	</section>
 
@@ -27,7 +27,7 @@
 			<Wave />
 		</div>
 
-		<div class="bg-blue-50 py-20">
+		<div class="bg-sky-50 pb-20">
 			<Navbar />
 
 			{#key page.url}
@@ -47,13 +47,16 @@
 		</div>
 	</div>
 
+	<Footer />
+</div>
+
+<div class="fixed min-h-screen min-w-screen object-cover -z-50 pointer-events-none inset-0">
 	<video
 		src={WavesBackground}
 		muted
 		autoplay
 		playsinline
 		loop
-		class="fixed min-h-screen min-w-screen object-cover -z-50 pointer-events-none object-left -top-28"
+		class="object-cover object-left w-full h-full"
 	></video>
 </div>
-<Footer />

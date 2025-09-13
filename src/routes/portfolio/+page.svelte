@@ -6,7 +6,7 @@
 </script>
 
 <Section title="So, what can you do?">
-    <div class="fill-blue-500">
+    <div class="fill-sky-500">
         <Flame />
     </div>
 

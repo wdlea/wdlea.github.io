@@ -15,7 +15,7 @@
 <EmptyCard>
     {#if icon}
         <div
-            class="*:h-14 *:w-14 z-0 *:-mb-14 *:-ml-2 *:!fill-blue-100"
+            class="*:h-14 *:w-14 z-0 *:-mb-14 *:-ml-2 *:!fill-sky-100"
         >
             {@render icon()}
         </div>
