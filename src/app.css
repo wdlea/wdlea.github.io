@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 body {
-    @apply bg-sky-50 text-sky-950
+    @apply bg-sky-500 text-sky-950
 }
 
 @theme {
@@ -10,7 +10,7 @@ body {
 }
 
 .bg-gradient-epic{
-    @apply bg-gradient-to-bl from-sky-400 to-sky-500
+    @apply bg-sky-400
 }
 
 svg {

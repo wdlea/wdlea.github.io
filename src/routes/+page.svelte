@@ -9,7 +9,7 @@
 </script>
 
 <Section title={`Stop Settling for a Website That's Just "There"`}>
-    Website is often the first impression you make. In a crowded digital world,
+    Websites are often the first impression you make. In a crowded digital world,
     "good enough" just isn't enough. A good website should set you apart from
     the crowd, and showcase your business's ability to deliver results.
 
