@@ -48,10 +48,6 @@
 
 <svelte:window bind:scrollY={scrollPosition} />
 
-<div class="fixed z-50 top-0">
-	{$prevScrollPosition} -> {scrollPosition}
-</div>
-
 {#if showAnimation}
 	<LaunchAnimation bind:showAnimation />
 {:else}
