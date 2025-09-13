@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="relative rounded-full shadow-inner h-14 *:absolute *:top-2 *:bottom-2 *:p-2 bg-sky-100 my-5 justify-center space-x-2 items-center max-w-sm mx-auto"
+    class="relative rounded-full shadow-inner h-14 *:absolute *:top-2 *:bottom-2 *:p-2 bg-sky-100 text-blue-950 my-5 justify-center space-x-2 items-center max-w-sm mx-auto"
     use:inview={{rootMargin: "-30%"}}
     oninview_enter={() => isVisible = true}
     oninview_leave={() => isVisible = false}

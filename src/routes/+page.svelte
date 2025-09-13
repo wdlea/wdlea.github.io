@@ -6,12 +6,13 @@
     import UpArrow from "$lib/assets/up_arrow.svelte";
     import Star from "$lib/assets/star.svelte";
     import Flame from "$lib/assets/flame.svelte";
+    import Signature from "$lib/assets/signature.svelte";
 </script>
 
 <Section title={`Stop Settling for a Website That's Just "There"`}>
-    Websites are often the first impression you make. In a crowded digital world,
-    "good enough" just isn't enough. A good website should set you apart from
-    the crowd, and showcase your business's ability to deliver results.
+    Websites are often the first impression you make. In a crowded digital
+    world, "good enough" just isn't enough. A good website should set you apart
+    from the crowd, and showcase your business's ability to deliver results.
 
     <div class="lg:flex lg:justify-stretch lg:space-x-5 lg:*:w-1/3">
         <IconCard icon={UpArrow} title="Built for Growth"
@@ -31,6 +32,52 @@
         </IconCard>
     </div>
 </Section>
+<Cta />
+
+<Section title="Why Me?" blueish>
+    <div class="space-y-2">
+        <p>
+            Hi, <br />
+            I'm a freelance web developer based in New Zealand. I specialise in building
+            websites for businesses who want to grow quickly and expect their website
+            to keep up. I can produce anything from blogs to
+            <strike class="decoration-2">simple</strike> (this is a static site)
+            static sites to online portals.
+        </p>
+        <p>
+            Unlike other designers, I build your websites with code instead of a
+            drag and drop builder. This approach gives me almost complete
+            control over the look, feel and functionality of the website,
+            allowing me to deliver the best possible end product to you.
+        </p>
+        <p>
+            I have been coding since I was 10, making websites since 11, been
+            awarded Excellence in an exam meant for 16-year-olds at 13 and
+            achieved my first scholarships at 16. I started managing websites at
+            a professional capacity in mid-2024 and deployed phase 1 of my first
+            professional website in September 2025. Through all this trial and
+            error, I learnt how to design stunning sites, perfected my
+            programming ability and have found an efficient set of tools to
+            develop websites.
+        </p>
+        <p>
+            Your online presence shouldn't just <em>uphold</em> your businesses reputation,
+            it should build prestige and showcase your businesses values. There are
+            too many mediocre designers out there, who will build you a janky site
+            that only works well on desktop, takes ages to load and looks awful.
+            Why should your businesses reputation be let down by an inexperienced
+            designer.
+        </p>
+        <p>
+            I can build you a feature packed, modern and mobile-friendly site
+            that will emphasise and cultivate the business reputation you are
+            working hard to build.
+        </p>
+        <p>Let's build your digital legacy,</p>
+        <Signature />
+    </div>
+</Section>
+
 <Cta />
 
 <Section title="My process for perfection">

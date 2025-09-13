@@ -5,6 +5,11 @@
 </script>
 
 <Section title="So, what can you do?">
+    <p>
+        This site was only launched on 13 September 2025, I am currently in the
+        process of getting references from previous clients. Please check back
+        in about a week for more.
+    </p>
     <PortfolioItem title="This Website" img={ScreenshotThis} href={"/"}>
         <p>
             This is a simple static site incorporating page transitions, video
