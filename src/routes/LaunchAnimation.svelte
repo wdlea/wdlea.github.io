@@ -31,9 +31,10 @@
     });
 </script>
 
+<svelte:window onclick={() => showAnimation = false}/>
 <div
     out:fade={{ duration: 300, easing: quadInOut}}
-    class="fixed bg-sky-500 w-full h-full z-50 flex flex-col text-6xl font-serif text-sky-50 font-bold p-10"
+    class="fixed bg-sky-500 w-full h-full z-40 flex flex-col text-6xl font-serif text-sky-50 font-bold p-10"
 >
     {#each LINES as line, idx}
         <span in:fly|global={{ delay: idx * WORD_DELAY + INITIAL_DELAY, ...slide_settings }}

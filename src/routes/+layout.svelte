@@ -8,19 +8,34 @@
 	import { fade } from "svelte/transition";
 	import { page } from "$app/state";
 	import { onMount } from "svelte";
-	import { afterNavigate } from "$app/navigation";
+	import { afterNavigate, beforeNavigate } from "$app/navigation";
 	import LaunchAnimation from "./LaunchAnimation.svelte";
+	import { get } from "svelte/store";
+	import prevScrollPosition from "$lib/PrevScrollPosition";
 
 	let { children } = $props();
 
 	let firstLoad = $state(false);
 	let hasJS = $state(false);
 
+	let scrollPosition = $state(0);
+
 	onMount(() => {
 		hasJS = true; // because to run this, js must be enabled
+
+		let id = setInterval(() => {
+			prevScrollPosition.set(scrollPosition);
+			console.log("POS", $prevScrollPosition);
+		}, 200);
+
+		return () => {
+			clearInterval(id);
+		};
 	});
 
 	afterNavigate(({ from }) => {
+		scrollTo({ top: $prevScrollPosition });
+
 		firstLoad = from == null;
 	});
 
@@ -30,6 +45,12 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
+
+<svelte:window bind:scrollY={scrollPosition} />
+
+<div class="fixed z-50 top-0">
+	{$prevScrollPosition} -> {scrollPosition}
+</div>
 
 {#if showAnimation}
 	<LaunchAnimation bind:showAnimation />
