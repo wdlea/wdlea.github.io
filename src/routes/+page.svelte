@@ -9,13 +9,13 @@
 </script>
 
 <Section title={`Stop Settling for a Website That's Just "There"`}>
-    Your website is often the first impression you make. In a crowded digital
-    world, "good enough" just isn't enough. A good website should set you apart
-    from the crowd, and showcase your business's ability to deliver results.
+    Website is often the first impression you make. In a crowded digital world,
+    "good enough" just isn't enough. A good website should set you apart from
+    the crowd, and showcase your business's ability to deliver results.
 
     <div class="lg:flex lg:justify-stretch lg:space-x-5 lg:*:w-1/3">
         <IconCard icon={UpArrow} title="Built for Growth"
-            >Your website should grow with your business. I can produce stunning
+            >Websites should grow with businesses. I can produce stunning
             websites for all business sizes. From basic, single page sites for
             smaller ventures to online portals for larger enterprises.
         </IconCard>
@@ -31,7 +31,7 @@
         </IconCard>
     </div>
 </Section>
-<Cta/>
+<Cta />
 
 <Section title="My process for perfection">
     <div class="border-l-4 border-blue-600 space-y-10 pb-10 mt-10">
@@ -78,9 +78,9 @@
             <p>After this stage, your site is good to go.</p>
         </ProcessCard>
     </div>
-    
+
     <!-- Random margin to account for border above 1 = border/2 -->
-    <div class="ml-1"> 
+    <div class="ml-1">
         <ProcessCard index="4" title="Continuation" subtitle="Ongoing support">
             <p>
                 After your website is finished, I offer ongoing support. I can
@@ -90,4 +90,4 @@
         </ProcessCard>
     </div>
 </Section>
-<Cta/>
+<Cta />

@@ -6,6 +6,8 @@
 	import Footer from "./Footer.svelte";
 	import WavesBackground from "$lib/assets/WavesBackground.mp4";
 	import WaveDown from "$lib/assets/wave_down.svelte";
+	import { fade } from "svelte/transition";
+	import { page } from "$app/state";
 
 	let { children } = $props();
 </script>
@@ -28,9 +30,14 @@
 		<div class="bg-blue-50 py-20">
 			<Navbar />
 
-			<div class="mb-10">
-				{@render children?.()}
-			</div>
+			{#key page.url}
+				<div
+					class="mb-10 overflow-x-clip"
+					transition:fade={{ duration: 100 }}
+				>
+					{@render children?.()}
+				</div>
+			{/key}
 		</div>
 
 		<div
@@ -46,7 +53,7 @@
 		autoplay
 		playsinline
 		loop
-		class="fixed top-0 min-h-screen min-w-screen object-cover -z-50 pointer-events-none object-left blur-xs"
+		class="fixed min-h-screen min-w-screen object-cover -z-50 pointer-events-none object-left -top-28"
 	></video>
 </div>
 <Footer />
