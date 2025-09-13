@@ -5,7 +5,6 @@
 	import Wave from "$lib/assets/wave.svelte";
 	import Footer from "./Footer.svelte";
 	import WaveDown from "$lib/assets/wave_down.svelte";
-	import { fade, fly } from "svelte/transition";
 	import { page } from "$app/state";
 	import { onMount } from "svelte";
 	import { afterNavigate, onNavigate } from "$app/navigation";
