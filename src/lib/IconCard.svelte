@@ -22,7 +22,7 @@
     {/if}
 
     <div class="p-5">
-        <h3 class="z-10 font-bold text-xl">{title}</h3>
+        <h3 class="z-10 font-bold text-left text-xl">{title}</h3>
 
         {@render children?.()}
     </div>

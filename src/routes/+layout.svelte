@@ -1,6 +1,6 @@
 <script lang="ts">
 	import "../app.css";
-	import favicon from "$lib/assets/favicon.svg";
+	import favicon from "$lib/assets/favicon.jpeg";
 	import Navbar from "$lib/navbar/Navbar.svelte";
 	import Wave from "$lib/assets/wave.svelte";
 	import Footer from "./Footer.svelte";
@@ -63,7 +63,7 @@
 {#if showAnimation}
 	<LaunchAnimation bind:showAnimation />
 {:else}
-	<div class={`min-h-[100svh] w-full relative`}>
+	<div class="min-h-[100svh] w-full relative drop-shadow">
 		<section class="p-10 h-[40svh] relative overflow-clip text-sky-50">
 			<h1 class="font-serif text-4xl sm:text-6xl font-bold">
 				William Leader
@@ -71,7 +71,7 @@
 			<span class="text-xl ml-3">Websites done better.</span>
 		</section>
 
-		<div class="*:min-w-full drop-shadow -mb-5 -z-10 overflow-clip">
+		<div class="*:min-w-full -mb-5 -z-10 overflow-hidden">
 			<Wave />
 		</div>
 
@@ -85,7 +85,7 @@
 		</div>
 
 		<div
-			class="*:min-w-full drop-shadow *:object-top *:-z-10 overflow-clip"
+			class="*:min-w-full *:object-top *:-z-10 overflow-clip"
 		>
 			<WaveDown />
 		</div>
