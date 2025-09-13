@@ -1,0 +1,1 @@
+import"./DsnmJJEf.js";import{f as s,d as e,h as i,r as p,b as t,n}from"./B21us1vR.js";var m=s('<div class="relative shadow rounded p-5 my-5"><!></div>');function l(r,o){var a=m(),d=e(a);i(d,()=>o.children??n),p(a),t(r,a)}export{l as E};
