@@ -4,6 +4,14 @@ body {
     @apply bg-sky-500 text-sky-950
 }
 
+::-webkit-scrollbar{
+    @apply bg-sky-50
+}
+
+::-webkit-scrollbar-thumb{
+    @apply bg-sky-300
+}
+
 @theme {
     --font-serif: "Domine", serif;
     --font-sans: "Montserrat", serif;

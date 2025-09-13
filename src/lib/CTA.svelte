@@ -13,7 +13,7 @@
     <p class="text-xl font-serif text-left left-2">Ready for a new site?</p>
     <a
         href="/contact"
-        class={`${isVisible ? "left-3/5" : "left-2"} text-center transition-all duration-300 ease-in-out right-2 font-bold rounded-full bg-gradient-epic text-sky-50 shadow hover:shadow-inner`}
+        class={`${isVisible ? "" : "motion-safe:left-2"} left-3/5 text-center transition-all duration-300 ease-in-out right-2 font-bold rounded-full bg-gradient-epic text-sky-50 shadow hover:shadow-inner`}
         >Contact Me</a
     >
 </div>
