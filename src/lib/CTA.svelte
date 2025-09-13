@@ -1,10 +1,19 @@
+<script>
+    import { inview } from "svelte-inview";
+
+    let isVisible = $state(false);
+</script>
+
 <div
-    class="rounded-full shadow-inner flex flex-row p-3 bg-blue-100 dark:bg-blue-950 my-5 justify-center space-x-2 items-center w-fit mx-auto"
+    class="relative rounded-full shadow-inner h-14 *:absolute *:top-2 *:bottom-2 *:p-2 bg-blue-100 dark:bg-blue-950 my-5 justify-center space-x-2 items-center max-w-sm mx-auto"
+    use:inview={{rootMargin: "-20%"}}
+    oninview_enter={() => isVisible = true}
+    oninview_leave={() => isVisible = false}
 >
-    <p class="text-xl font-serif">Ready for a new site?</p>
+    <p class="text-xl font-serif text-left left-2">Ready for a new site?</p>
     <a
         href="/contact"
-        class="font-bold rounded-full bg-gradient-to-bl from-blue-500 to-blue-600 text-blue-50 p-3 shadow hover:shadow-inner"
+        class={`${isVisible ? "left-3/5" : "left-2"} text-center transition-all duration-300 ease-in-out right-2 font-bold rounded-full bg-gradient-to-bl from-blue-500 to-blue-600 text-blue-50 shadow hover:shadow-inner`}
         >Contact Me</a
     >
 </div>
