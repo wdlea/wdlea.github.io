@@ -7,6 +7,7 @@
     import Star from "$lib/assets/star.svelte";
     import Flame from "$lib/assets/flame.svelte";
     import Signature from "$lib/assets/signature.svelte";
+    import Quote from "$lib/Quote.svelte";
 </script>
 
 <Section title={`Stop Settling for a Website That's Just "There"`}>
@@ -35,7 +36,20 @@
 <Cta />
 
 <Section title="Why Me?" blueish>
-    <div class="space-y-2">
+    <Quote source="Jocelyn Peach">
+        <p>
+            William has worked with me over the past year to set up my website
+            and publish interviews and other items on my website
+            <a
+                href="https://www.nursingchampionz.nz"
+                class="underline text-sky-300">www.nursingchampionz.nz</a
+            >. He has been patient, listened carefully, offered advice and
+            delivered in a timely manner. I am so pleased with his work and
+            highly recommend him.
+        </p>
+    </Quote>
+
+    <div class="space-y-2 mt-10">
         <p>
             Hi, <br />
             I'm a freelance web developer based in New Zealand. I specialise in building
