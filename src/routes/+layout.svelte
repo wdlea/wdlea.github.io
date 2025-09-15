@@ -17,19 +17,8 @@
 	let firstLoad = $state(false);
 	let hasJS = $state(false);
 
-	let scrollPosition = $state(0);
-
 	onMount(() => {
 		hasJS = true; // because to run this, js must be enabled
-
-		let id = setInterval(() => {
-			prevScrollPosition.set(scrollPosition);
-			console.log("POS", $prevScrollPosition);
-		}, 200);
-
-		return () => {
-			clearInterval(id);
-		};
 	});
 
 	onNavigate((navigation) => {
@@ -45,6 +34,7 @@
 
 	afterNavigate(({ from }) => {
 		scrollTo({ top: $prevScrollPosition });
+		prevScrollPosition.set(0);
 
 		firstLoad = from == null;
 	});
@@ -57,8 +47,6 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
-
-<svelte:window bind:scrollY={scrollPosition} />
 
 {#if showAnimation}
 	<LaunchAnimation bind:showAnimation />

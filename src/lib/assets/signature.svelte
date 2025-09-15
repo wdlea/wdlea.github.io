@@ -18,6 +18,7 @@
     visible = false;
   }}
 >
+  <span class="sr-only">William Leader</span>
   {#if visible}
     <svg
       viewBox="0 0 123.2217 31.977724"
