@@ -52,7 +52,7 @@
 	<LaunchAnimation bind:showAnimation />
 {:else}
 	<div class="min-h-[100svh] w-full relative drop-shadow">
-		<section class="p-10 h-[40svh] relative overflow-clip text-sky-50">
+		<section class="p-10 h-[30svh] relative overflow-clip text-sky-50">
 			<h1 class="font-serif text-4xl sm:text-6xl font-bold">
 				William Leader
 			</h1>
@@ -72,9 +72,7 @@
 			{/key}
 		</div>
 
-		<div
-			class="*:min-w-full *:object-top *:-z-10 overflow-clip"
-		>
+		<div class="*:min-w-full *:object-top *:-z-10 overflow-clip">
 			<WaveDown />
 		</div>
 

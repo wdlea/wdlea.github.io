@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-    <title>William Leader - {pages[pageIndex].title}</title>
+    <title>William Leader - {pages[pageIndex].title ?? "404"}</title>
 </svelte:head>
 
 <svelte:window bind:scrollY={scrollPosition} />
