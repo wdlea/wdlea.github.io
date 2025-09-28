@@ -34,6 +34,7 @@
 
 	afterNavigate(({ from }) => {
 		scrollTo({ top: $prevScrollPosition });
+
 		prevScrollPosition.set(0);
 
 		firstLoad = from == null;
@@ -52,7 +53,7 @@
 	<LaunchAnimation bind:showAnimation />
 {:else}
 	<div class="min-h-[100svh] w-full relative drop-shadow">
-		<section class="p-10 h-[30svh] relative overflow-clip text-sky-50">
+		<section class="p-10 h-[10svh] relative text-sky-50">
 			<h1 class="font-serif text-4xl sm:text-6xl font-bold">
 				William Leader
 			</h1>
