@@ -40,7 +40,7 @@
     >
         <p>This was my very first professional website.</p>
 
-        <Quote source="Jocelyn Peach">
+        <Quote source="Jocelyn Peach" lightMark>
             <p>
                 William has worked with me over the past year to set up my
                 website and publish interviews and other items on my website
@@ -54,7 +54,7 @@
         </Quote>
     </PortfolioItem>
 
-    <PortfolioItem title="This Website" img={ScreenshotThis} href={"/"}>
+    <PortfolioItem title="This Website" img={ScreenshotThis} href={"/"} lightMark>
         <p>
             This is a simple static site incorporating page transitions, video
             backgrounds and a monochrome palette.
